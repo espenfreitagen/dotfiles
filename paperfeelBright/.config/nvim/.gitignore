@@ -1,0 +1,26 @@
+# Editor swap, undo and backup
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+
+# Lazy.nvim / plugin state
+lazy-lock.json
+
+# testfiles
+test*
+*.test.*
+tests/
+__tests__/
+
+# Node and js/ts 
+node_modules/
+dist/
+build/
+
+# LSP/meta
+*.log
+*.out
+.cache/
+
