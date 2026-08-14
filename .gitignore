@@ -1,0 +1,12 @@
+# Zsh runtime/generated files
+zsh/.histfile
+zsh/.zcompdump*
+zsh/.zinit/
+
+# Backup files
+*.bak
+
+# Vim/Neovim temporary files
+*.swp
+*.swo
+*~
