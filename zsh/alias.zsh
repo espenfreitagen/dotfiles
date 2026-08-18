@@ -24,6 +24,7 @@ alias ipv4="ip addr show | grep 'inet ' | grep -v '127.0.0.1' | cut -d' ' -f6 | 
 alias ipv6="ip addr show | grep 'inet6 ' | cut -d ' ' -f6 | sed -n '2p'" 
 alias ipvp='curl ifconfig.me/ip'
 alias conusn="nmcli dev wifi connect 'eduroam' --ask"
+alias conesp="nmcli dev wifi connect 'Espen' --ask"
 
 # PACMAN / YAY
 alias gib='sudo pacman -S'
@@ -39,4 +40,3 @@ alias kbl='hyprctl switchxkblayout tuxedo-keyboard next'
 alias brickstore='QT_QPA_PLATFORM=xcb ~/Downloads/Linux-AppImage-BrickStore-2026.3.2-x86_64.AppImage && disown'
 alias caido='caido-desktop-v0.57.0-linux-x86_64.AppImage'
 alias htbvpn='openvpn ~/Documents/starting_points_eu-starting-point-1-dhcp.ovpn &'
-alias quartus='QT_QPA_PLATFORM=xcb quartus'

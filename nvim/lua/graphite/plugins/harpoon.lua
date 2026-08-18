@@ -12,10 +12,10 @@ return {
 
     keymap("n", "<leader>e", function() harpoon.ui:toggle_quick_menu(list) end)
     keymap("n", "<leader>a", function() list:add() end)
-    keymap("n", "<leader>h", function() list:select(1) end)
-    keymap("n", "<leader>j", function() list:select(2) end)
-    keymap("n", "<leader>k", function() list:select(3) end)
-    keymap("n", "<leader>l", function() list:select(4) end)
+    keymap("n", "<leader>1", function() list:select(1) end)
+    keymap("n", "<leader>2", function() list:select(2) end)
+    keymap("n", "<leader>3", function() list:select(3) end)
+    keymap("n", "<leader>4", function() list:select(4) end)
   end,
 }
 

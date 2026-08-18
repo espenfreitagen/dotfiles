@@ -13,12 +13,12 @@ return {
     vim.lsp.config('*', {
       capabilities = vim.lsp.protocol.make_client_capabilities(),
       on_attach = function(client, bufnr)
-        local keymap = vim.keymap.set
-        keymap("n", "gd", vim.lsp.buf.definition, { buffer = bufnr })
-        keymap("n", "gr", vim.lsp.buf.references, { buffer = bufnr })
-        keymap("n", "K", vim.lsp.buf.hover, { buffer = bufnr })
-        keymap("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr })
-        keymap("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })
+        --local keymap = vim.keymap.set
+        --keymap("n", "gd", vim.lsp.buf.definition, { buffer = bufnr })
+        --keymap("n", "gr", vim.lsp.buf.references, { buffer = bufnr })
+        --keymap("n", "K", vim.lsp.buf.hover, { buffer = bufnr })
+        --keymap("n", "<leader>rn", vim.lsp.buf.rename, { buffer = bufnr })
+        --keymap("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })
       end,
     })
 
@@ -27,6 +27,7 @@ return {
       "clangd",
       "lua_ls",
       "basedpyright",
+      "pyright",
       "bashls",
       "jsonls",
       "yamlls",

@@ -4,7 +4,7 @@ return  {
     require('komau').setup({
       style = 'auto', -- "dark" | "light" | "auto" (uses &background)
       transparent = false,
-      dim_inactive = false,
+      dim_inactive = true,
       terminal_colors = true,
       styles = {
         comments = { italic = true },

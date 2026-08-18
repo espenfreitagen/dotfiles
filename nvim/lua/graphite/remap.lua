@@ -1,13 +1,11 @@
 local keymap = vim.keymap.set
 vim.g.mapleader = " "
 
-keymap("n", "<leader>fe", vim.cmd.Ex)
 keymap("n", "<leader>q", vim.cmd.q)
 keymap("n", "<leader>bd", vim.cmd.bd)
 keymap("n", "<leader>w", vim.cmd.w)
 
-keymap("i", "jk", "<esc>")
-
+keymap("n", "<leader>fe", vim.cmd.Ex)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>")
 keymap("n", "<leader>fn", "<cmd>Telescope grep_string<CR>")
@@ -31,7 +29,15 @@ keymap("n", "<leader>Y", "\"+Y")
 keymap("n", "<leader>d", "\"_d")
 keymap("v", "<leader>d", "\"_d")
 
+keymap("n", "<leader>p", "\"+p")
+
 keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 keymap("n", "<leader>n", "<cmd>nohl<CR>")
+
+-- Diagnostics
+keymap("n", "<leader>l", vim.diagnostic.open_float, {
+    desc = "Show diagnostic",
+})
+
