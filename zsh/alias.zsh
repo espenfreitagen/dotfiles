@@ -4,12 +4,8 @@ alias nv='nvim .'
 # GREP
 alias grep='grep --color=auto'
 
-# TMUX
-alias tmuxdt='tmux detach'
-
 # CD
 alias ..='cd ..'
-alias cdr='cd /'
 
 # LS
 alias l='clear && ls --color -lh'
@@ -37,6 +33,3 @@ alias error='journalctl -b -p err'
 
 # MISC
 alias kbl='hyprctl switchxkblayout tuxedo-keyboard next'
-alias brickstore='QT_QPA_PLATFORM=xcb ~/Downloads/Linux-AppImage-BrickStore-2026.3.2-x86_64.AppImage && disown'
-alias caido='caido-desktop-v0.57.0-linux-x86_64.AppImage'
-alias htbvpn='openvpn ~/Documents/starting_points_eu-starting-point-1-dhcp.ovpn &'

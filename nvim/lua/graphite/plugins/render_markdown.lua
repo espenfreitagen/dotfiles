@@ -11,8 +11,8 @@ return {
           anti_conceal = {
                  enabled = true,
                  disabled_modes = false,
-                 above = 1,
-                 below = 1,
+                 above = 0,
+                 below = 0,
                  ignore = {
                      code_background = true,
                      indent = true,
