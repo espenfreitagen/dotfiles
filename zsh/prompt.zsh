@@ -9,6 +9,6 @@ precmd() {
 
 # Prompt
 PROMPT='%d 
--_- '
+   '
 
 RPROMPT="%T"

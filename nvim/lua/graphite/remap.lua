@@ -32,7 +32,9 @@ keymap("v", "<leader>d", "\"_d")
 keymap("n", "<leader>p", "\"+p")
 
 keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+--keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+keymap("n", "<leader>c", "<cmd>!gcc %<CR>", { silent = true })
+keymap("n", "<leader>xc", "<cmd>!./a.out %<CR>")
 
 keymap("n", "<leader>n", "<cmd>nohl<CR>")
 

@@ -18,6 +18,7 @@ return {
         "css",
         "javascript",
         "typescript",
+        "hyprlang",
       },
       highlight = {
         enable = true,
